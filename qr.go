@@ -9,7 +9,7 @@ package qr // import "rsc.io/qr"
 
 import (
 	"errors"
-	"hammer-labs/qr/coding"
+	"github.com/hammer-labs/qr/coding"
 	"image"
 	"image/color"
 )
