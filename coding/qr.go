@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"rsc.io/qr/gf256"
+	"hammer-labs/qr/gf256"
 )
 
 // Field is the field for QR error correction.

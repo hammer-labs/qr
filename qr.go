@@ -9,10 +9,9 @@ package qr // import "rsc.io/qr"
 
 import (
 	"errors"
+	"hammer-labs/qr/coding"
 	"image"
 	"image/color"
-
-	"rsc.io/qr/coding"
 )
 
 // A Level denotes a QR error correction level.
