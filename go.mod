@@ -1,1 +1,1 @@
-module rsc.io/qr
+module hammer-labs/qr
