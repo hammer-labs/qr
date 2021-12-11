@@ -18,7 +18,6 @@ _quick-commit:
 	git add .
 	git commit -m "updating"
 	git push
-	git push --tags
 
 
 _setup-versions:
