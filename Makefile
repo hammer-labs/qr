@@ -2,6 +2,9 @@ GIT_BRANCH ?= main
 GIT_REMOTE ?= origin
 RELEASE_TYPE ?= patch
 
+tidy:
+	@go mod tidy
+	@go mod vendor
 
 test:
 	go test .
@@ -9,7 +12,6 @@ test:
 snapshot:
 	@$(info - Releasing $(PROJECT_NAME)-snapshot)
 	@goreleaser release --snapshot --skip-publish --rm-dist
-
 
 
 _quick-commit:
@@ -35,6 +37,7 @@ next-version: _setup-versions
 release: _setup-versions
 	$(call git_push,"Released @ $(ENV)")
 	@git tag $(NEXT_VERSION)
+	@git tag v$(NEXT_VERSION)
 	@git push $(GIT_REMOTE) --tags
 	@$(info - Releasing $(PROJECT_NAME)-snapshot)
 	@goreleaser release --rm-dist
