@@ -7,10 +7,9 @@ package coding // import "rsc.io/qr/coding"
 
 import (
 	"fmt"
+	"github.com/hammer-labs/qr/gf256"
 	"strconv"
 	"strings"
-
-	"hammer-labs/qr/gf256"
 )
 
 // Field is the field for QR error correction.

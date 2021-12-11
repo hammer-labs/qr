@@ -6,10 +6,9 @@ package coding
 
 import (
 	"bytes"
+	"github.com/hammer-labs/qr/gf256"
+	"github.com/hammer-labs/qr/libqrencode"
 	"testing"
-
-	"hammer-labs/qr/gf256"
-	"hammer-labs/qr/libqrencode"
 )
 
 func test(t *testing.T, v Version, l Level, text ...Encoding) bool {

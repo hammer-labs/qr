@@ -3,8 +3,8 @@ GIT_REMOTE ?= origin
 RELEASE_TYPE ?= patch
 
 tidy:
-	@go mod tidy
-	@go mod vendor
+	go mod tidy
+	go mod vendor
 
 test:
 	go test .
